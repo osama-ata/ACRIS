@@ -1,0 +1,18 @@
+The sources provide several insights into how the **Query Operation Module** of a Risk Identification and Retrieval System (RIRS) can be enhanced as part of a modernization effort.
+
+The "RIRS - REV02.01.pdf" describes the existing **Query Operation** module as processing user queries using a Sequence of Actions (SoA) similar to risk case processing (tokenization, lowercasing, lemmatization, stop word removal). A key aspect of this module is **query expansion**, which involves scanning the processed query to match related words in a pre-defined risk-related lexicon. Terms not found in this lexicon are expanded using synonyms from WordNet. Finally, terms in both the original and expanded queries that do not exist in the risk case database are removed. This approach, also detailed in "zou 2017...", aims to address the challenge of semantic similarity by including semantically related terms in the search. Zou et al. (2017) emphasize that traditional methods might miss relevant cases due to differences in wording.
+
+"Modernizing the Risk Identification and Retrieval System" proposes significant upgrades to this functionality, moving towards more advanced NLP techniques:
+
+* **Transformer-based Query and Document Embeddings:** Instead of relying on lexicon-based expansion, the modernization suggests encoding the **entire user query into a dense vector using a pre-trained transformer model** like BERT, RoBERTa, or ELECTRA. Similarly, risk case documents would be embedded into the same vector space. **Similarity would then be directly computed between these embeddings**, capturing semantic relationships in a more nuanced way than simple keyword matching and lexicon-based expansion. This aligns with the advancements in NLP highlighted in "ChatGPT_Background_LitReview.md" and "Gemini_Construction Risk Identification Literature Review_.md" where transformer models have shown superior performance in understanding text.
+
+* **Query Rewriting and Intent Recognition:** The modernization also proposes incorporating techniques for **query rewriting based on historical query patterns** and **intent recognition**. This would enable the system to better understand the user's underlying need and reformulate the search query for more effective retrieval. For example, if users frequently search for "falls" when referring to "falling from height," the system could learn to rewrite such queries automatically.
+
+These proposed enhancements directly address some of the challenges outlined in "NLP and Recommender System Challenges in Construction Risk". The difficulty in handling semantic similarity in case retrieval can be better tackled by using transformer-based embeddings that capture contextual meaning beyond simple synonyms provided by WordNet. Furthermore, understanding the user's intent could lead to more relevant results even if the initial query is not perfectly formulated.
+
+In summary, the modernization of the **Query Operation Module** shifts from a rule-based, lexicon-driven approach to a more sophisticated, **semantic understanding based on transformer models**. This includes:
+
+* **Moving from keyword-based and lexicon-assisted query expansion to encoding entire queries and documents into semantic vectors for direct similarity comparison.**
+* **Incorporating query rewriting and intent recognition to better understand user needs and improve search effectiveness.**
+
+These advancements promise to enhance the accuracy and relevance of risk information retrieval, addressing key limitations of earlier approaches by leveraging the power of modern NLP techniques.
