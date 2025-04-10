@@ -1,0 +1,458 @@
+@article{Okudan2021,
+  author    = {Ozan Okudan and Cenk Budayan and Irem Dikmen},
+  title     = {A Knowledge-Based Risk Management Tool for Construction Projects using Case-based Reasoning},
+  journal   = {Expert Systems with Applications},
+  volume    = {173},
+  pages     = {114776},
+  year      = {2021},
+  doi       = {https://doi.org/10.1016/j.eswa.2021.114776},
+  url       = {https://www.researchgate.net/publication/349591502_A_Knowledge-Based_Risk_Management_Tool_for_Construction_Projects_using_Case-based_Reasoning}
+}
+
+@article{Unknown2023a,
+  author    = {Unknown},
+  title     = {Development of Knowledge Graph Based on Risk Register to Support Risk Management of Construction Projects},
+  journal   = {Unknown},
+  year      = {2023},
+  url       = {https://www.researchgate.net/publication/370967137_Development_of_Knowledge_Graph_Based_on_Risk_Register_to_Support_Risk_Management_of_Construction_Projects}
+}
+
+@article{Unknown2024a,
+  author    = {Unknown},
+  title     = {Question-Answering System Powered by Knowledge Graph and Generative Pretrained Transformer to Support Risk Identification in Tunnel Projects},
+  journal   = {Journal of Construction Engineering and Management},
+  volume    = {151},
+  number    = {1},
+  year      = {2024},
+  doi       = {https://doi.org/10.1061/JCEMD4.COENG-15230},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Unknown2024b,
+  author    = {Unknown},
+  title     = {Designing a Knowledge-Based System to Facilitate the Process of Fall Risk Assessment in Construction},
+  journal   = {Unknown},
+  year      = {2024},
+  url       = {https://www.researchgate.net/publication/381458536_Designing_a_Knowledge-Based_System_to_Facilitate_the_Process_of_Fall_Risk_Assessment_in_Construction}
+}
+
+@article{Zou2017,
+  author    = {Yang Zou and Arto Kiviniemi and Stephen W Jones},
+  title     = {Retrieving similar cases for construction project risk management using Natural Language Processing techniques},
+  journal   = {Automation in Construction},
+  volume    = {80},
+  pages     = {66-74},
+  year      = {2017},
+  doi       = {https://doi.org/10.1016/j.autcon.2017.04.003},
+  url       = {https://www.researchgate.net/publication/315998087_Retrieving_similar_cases_for_construction_project_risk_management_using_Natural_Language_Processing_techniques}
+}
+
+@article{Kim2019,
+  author    = {Taekhyung Kim and Seokho Chi},
+  title     = {Accident Case Retrieval and Analyses: Using Natural Language Processing in the Construction Industry},
+  journal   = {Journal of Construction Engineering and Management},
+  volume    = {145},
+  number    = {3},
+  pages     = {04019004},
+  year      = {2019},
+  doi       = {https://doi.org/10.1061/(ASCE)CO.1943-7862.0001625},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29CO.1943-7862.0001625}
+}
+
+@article{Eken2022,
+  author    = {Görkem Eken},
+  title     = {Using natural language processing for automated construction contract review during risk assessment at the bidding stage},
+  journal   = {Unknown},
+  year      = {2022},
+  url       = {https://open.metu.edu.tr/handle/11511/101793}
+}
+
+@article{Unknown2023b,
+  author    = {Unknown},
+  title     = {Natural Language Processing with Multitask Classification for Semantic Prediction of Risk-Handling Actions in Construction Contracts},
+  journal   = {Journal of Computing in Civil Engineering},
+  volume    = {37},
+  number    = {6},
+  year      = {2023},
+  doi       = {https://doi.org/10.1061/JCCEE5.CPENG-5218},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCCEE5.CPENG-5218}
+}
+
+@article{Unknown2024c,
+  author    = {Unknown},
+  title     = {Automated construction contract analysis for risk and responsibility assessment using natural language processing and machine learning},
+  journal   = {Unknown},
+  year      = {2024},
+  url       = {https://centaur.reading.ac.uk/120348/4/1-s2.0-S0166361525000168-main.pdf}
+}
+
+@article{Gao2024,
+  author    = {Unknown},
+  title     = {Construction risk identification using a multi-sentence context-aware method},
+  journal   = {Unknown},
+  year      = {2024},
+  url       = {https://www.nickbeauchamp.com/work/gao-risk-nlp.pdf}
+}
+
+@article{Shamshiri2024,
+  author    = {Rostam Shamshiri and Ryuichi Shigeno and Jihwan Park},
+  title     = {Review of Natural Language Processing (NLP) And Generative AI Applications in the Era of Construction 4.0},
+  journal   = {Transactions on Construction Research},
+  year      = {2024},
+  url       = {https://conferences.lib.unb.ca/index.php/tcrc/article/download/2033/1361}
+}
+
+@article{Erfani2021,
+  author    = {Saeed Erfani and Zhaomin Cui},
+  title     = {Natural Language Processing Application in Construction Domain: An Integrative Review and Algorithms Comparison},
+  journal   = {ASCE International Conference on Computing in Civil Engineering 2022},
+  pages     = {33-42},
+  year      = {2022},
+  doi       = {https://doi.org/10.1061/9780784483893.004},
+  url       = {https://ascelibrary.org/doi/10.1061/9780784483893.004}
+}
+
+@article{Tang2021,
+  author    = {Shuo Tang and Amin Golparvar-Fard},
+  title     = {Machine Learning-Based Risk Analysis for Construction Worker Safety from Ubiquitous Site Photos and Videos},
+  journal   = {Journal of Computing in Civil Engineering},
+  volume    = {35},
+  number    = {6},
+  pages     = {04021039},
+  year      = {2021},
+  doi       = {https://doi.org/10.1061/(ASCE)CP.1943-5487.0000979},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29CP.1943-5487.0000979}
+}
+
+@article{Unknown2022a,
+  author    = {Unknown},
+  title     = {A Data-Driven Recommendation System for Construction Safety Risk Assessment},
+  journal   = {Journal of Construction Engineering and Management},
+  volume    = {149},
+  number    = {1},
+  pages     = {04022193},
+  year      = {2023},
+  doi       = {https://doi.org/10.1061/JCEMD4.COENG-13437},
+  url       = {https://ascelibrary.com/doi/10.1061/JCEMD4.COENG-13437}
+}
+
+@article{Gondia2023,
+  author    = {Ahmed Gondia and Ahmed Moussa and Mohamed Ezzeldin and Wael El-Dakhakhni},
+  title     = {Machine Learning-based Construction Site Dynamic Risk Models},
+  journal   = {Developments in the Built Environment},
+  volume    = {189},
+  pages     = {100327},
+  year      = {2023},
+  doi       = {https://doi.org/10.1016/j.dibe.2023.100327},
+  url       = {https://ideas.repec.org/a/eee/tefoso/v189y2023ics004016252300032x.html}
+}
+
+@article{Unknown2024d,
+  author    = {Unknown},
+  title     = {Automated Risk Analysis for Construction Contracts Using Neural Networks},
+  journal   = {Journal of Legal Affairs and Dispute Resolution in Engineering and Construction},
+  volume    = {16},
+  number    = {4},
+  pages     = {04024039},
+  year      = {2024},
+  doi       = {https://doi.org/10.1061/JLADAH.LADR-1149},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JLADAH.LADR-1149}
+}
+
+@article{Unknown2024e,
+  author    = {Unknown},
+  title     = {Bibliometric Analysis of Generative AI in Construction Risk Management: Unveiling Benefits and Risks},
+  journal   = {Built Environment Project and Asset Management},
+  volume    = {ahead-of-print},
+  number    = {ahead-of-print},
+  pages     = {ahead-of-print},
+  year      = {2024},
+  doi       = {https://doi.org/10.1108/BEPAM-11-2024-0161},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/BEPAM-11-2024-0161/full/html}
+}
+
+@article{Unknown2024f,
+  author    = {Unknown},
+  title     = {Cyber Risk Assessment Framework for the Construction Industry Using Machine Learning Techniques},
+  journal   = {Risks},
+  volume    = {12},
+  number    = {6},
+  pages     = {185},
+  year      = {2024},
+  doi       = {https://doi.org/10.3390/risks12060185},
+  url       = {https://www.mdpi.com/2075-5309/14/6/1561}
+}
+
+@article{Turkyilmaz2025,
+  author    = {Burak Turkyilmaz},
+  title     = {RISK-BASED COMPLETION COST PREDICTION APPROACH IN CONSTRUCTION PROJECTS UTILIZING MACHINE LEARNING},
+  journal   = {ITcon},
+  volume    = {30},
+  pages     = {16-34},
+  year      = {2025},
+  doi       = {10.36660/itcon.2025.9101},
+  url       = {https://www.itcon.org/papers/2025_16-ITcon-Turkyilmaz.pdf}
+}
+
+@article{Ibrahim2024,
+  author    = {Mohammed Ibrahim and Simaan AbouRizk and Osama Moselhi},
+  title     = {Machine learning algorithms for safer construction sites: Critical review},
+  journal   = {Building Engineering},
+  volume    = {2},
+  number    = {1},
+  pages     = {544},
+  year      = {2024},
+  doi       = {https://doi.org/10.59206/be.2024.2.1.544},
+  url       = {https://www.researchgate.net/publication/380147296_Machine_learning_algorithms_for_safer_construction_sites_Critical_review}
+}
+
+@article{Aibinu2019,
+  author    = {Ayodeji Aibinu and Venkatesh Kodur},
+  title     = {A review of artificial intelligence based risk assessment methods for capturing complexity-risk interdependencies: Cost overrun in construction projects},
+  journal   = {Engineering, Construction and Architectural Management},
+  volume    = {27},
+  number    = {3},
+  pages     = {617-640},
+  year      = {2020},
+  doi       = {https://doi.org/10.1108/ECAM-08-2019-0461},
+  url       = {https://www.researchgate.net/publication/360825339_Natural_Language_Processing_Application_in_Construction_Domain_An_Integrative_Review_and_Algorithms_Comparison}
+}
+
+@article{Khodabakhshian2023,
+  author    = {Ania Khodabakhshian},
+  title     = {Machine Learning for Risk management in construction projects},
+  journal   = {Unknown},
+  year      = {2023},
+  url       = {https://www.politesi.polimi.it/retrieve/90d95352-fd6a-4911-b364-edd42dfd0fab/Final%20Thesis-Ania%20Khodabakhshian-ABC%20Department.pdf}
+}
+
+@article{Wilson2012,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Unknown},
+  year      = {2012},
+  url       = {https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2024.1336088/full}
+}
+
+@article{Yang2021,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Unknown},
+  year      = {2021},
+  url       = {https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2024.1336088/full}
+}
+
+@article{Unknown2018,
+  author    = {Unknown},
+  title     = {Applications of machine learning methods for engineering risk assessment - A review},
+  journal   = {Expert Systems with Applications},
+  volume    = {115},
+  pages     = {475-490},
+  year      = {2019},
+  doi       = {https://doi.org/10.1016/j.eswa.2018.08.034},
+  url       = {https://www.researchgate.net/publication/336832267_Applications_of_machine_learning_methods_for_engineering_risk_assessment_-_A_review}
+}
+
+@article{Al-Mhdawi2022,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2022},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Chenya2022,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2022},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Namian2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2024},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Karakhan2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2024},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Mohammed2023,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2023},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Dacre2022,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2022},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Yan2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2024},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Ghimire2023,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2023},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Manh2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2024},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Zhao2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2024},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Vijayalakshmi2023,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2023},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Himeur2023,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2023},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Osmeni2023,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2023},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Schneider2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2024},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Gupta2023,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2023},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Dacre2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Built Environment Project and Asset Management},
+  year      = {2024},
+  url       = {https://www.emerald.com/insight/content/doi/10.1108/uss-11-2024-0069/full/html}
+}
+
+@article{Abioye2021,
+  author    = {Abimbola Abioye and Simaan AbouRizk and Osama Moselhi},
+  title     = {Artificial intelligence in construction: current status and future trends},
+  journal   = {Journal of Construction Engineering and Management},
+  volume    = {147},
+  number    = {3},
+  pages     = {04021013},
+  year      = {2021},
+  doi       = {https://doi.org/10.1061/(ASCE)CO.1943-7862.0002003},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29CO.1943-7862.0002003}
+}
+
+@article{Saka2024,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2024},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Lee2019,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2019},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Xu2021,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2021},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Hao2021,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2021},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Kejriwal2019,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2019},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Lin2020,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2020},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Siraj2019,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2019},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
+
+@article{Aladağ2023,
+  author    = {Unknown},
+  title     = {Unknown},
+  journal   = {Journal of Construction Engineering and Management},
+  year      = {2023},
+  url       = {https://ascelibrary.org/doi/abs/10.1061/JCEMD4.COENG-15230}
+}
