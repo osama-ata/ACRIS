@@ -25,7 +25,7 @@ The sources establish that **Risk Case Retrieval is a critical process in knowle
 
 **Risk Case Retrieval in the Context of Recommender Systems for Risk:**
 
-The "RIRS - REV02.01.pdf" paper explicitly proposes **integrating a Recommender Module with a system that already utilizes NLP for risk case retrieval (similar to Zou's 2017 framework)**. This integration aims to enhance risk identification by:
+The "ACRIS - REV02.01.pdf" paper explicitly proposes **integrating a Recommender Module with a system that already utilizes NLP for risk case retrieval (similar to Zou's 2017 framework)**. This integration aims to enhance risk identification by:
 
 * **Addressing the "Cold-Start Problem":** Recommender systems can provide risk suggestions to users who lack experience or knowledge of where to begin their risk identification process, even without explicit queries.
 * **Utilizing User and Project Data:** Recommender modules can leverage **user profiles, project characteristics, and historical query data** to provide more personalized and contextually relevant risk case recommendations.

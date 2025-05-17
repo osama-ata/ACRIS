@@ -15,7 +15,7 @@ By 2025, the sources suggest that **AI-enabled risk identification and retrieval
 
 Specifically regarding **interpretability**, while not explicitly stated as a dominant focus for 2025 in "ChatGPT_Background_LitReview.md", "DeepSeek_Background_LitReview_2.md" mentions that **ASCE (2025) highlighted interpretability challenges in deep learning models**. This suggests that while AI models become more powerful, understanding *why* they make certain risk identifications or predictions will be a significant concern and a potential area of focus in 2025 research and development.
 
-The "Modernizing the Risk Identification and Retrieval System" excerpt further supports the trend towards more advanced AI techniques for RIRS upgrades, mentioning contextualized word embeddings from models like BERT and RoBERTa, as well as the potential for Explainable AI (XAI) integration in the recommending operation module.
+The "Modernizing the Risk Identification and Retrieval System" excerpt further supports the trend towards more advanced AI techniques for ACRIS upgrades, mentioning contextualized word embeddings from models like BERT and RoBERTa, as well as the potential for Explainable AI (XAI) integration in the recommending operation module.
 
 The "NLP and Recommender System Challenges in Construction Risk" excerpt highlights the importance of building comprehensive risk case databases, which are crucial for the effectiveness of these AI-enabled systems.
 

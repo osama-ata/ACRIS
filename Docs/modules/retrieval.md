@@ -1,11 +1,11 @@
-Based on the sources and our conversation history, the **Retrieval Application Module** plays a crucial role in the Risk Identification and Retrieval System (RIRS) by determining how the retrieved risk cases are presented to the user.
+Based on the sources and our conversation history, the **Retrieval Application Module** plays a crucial role in the Automated Construction Risk Identifcation System (ACRIS) by determining how the retrieved risk cases are presented to the user.
 
-According to "RIRS - REV02.01.pdf", the current **Retrieval Application Module** takes the output from two sources to rank risk cases:
+According to "ACRIS - REV02.01.pdf", the current **Retrieval Application Module** takes the output from two sources to rank risk cases:
 
 * **Similarity scores** calculated between the user's query and the risk cases (likely from the Query Operation Module).
 * **Scores from the Recommending Operation Module**, which provides recommendations based on user data, project data, and historical queries.
 
-The module then **ranks all cases based on a combination of these two scores** and returns, for example, the top similar cases to the users. The formula for this ranking is given as: `Score = similarity (case, original query) + X * similarity (case, expanded query)` in "RIRS - REV02.01.pdf". The value of 'X' is set to 0.7 based on findings from other research on the effectiveness of synonyms in query expansion.
+The module then **ranks all cases based on a combination of these two scores** and returns, for example, the top similar cases to the users. The formula for this ranking is given as: `Score = similarity (case, original query) + X * similarity (case, expanded query)` in "ACRIS - REV02.01.pdf". The value of 'X' is set to 0.7 based on findings from other research on the effectiveness of synonyms in query expansion.
 
 "Modernizing the Risk Identification and Retrieval System" suggests refinements to the ranking process within the **Retrieval Application Module**:
 
@@ -25,4 +25,4 @@ In summary, the modernization of the **Retrieval Application Module** focuses on
 * Moving from a simple linear combination of scores to **dynamic hybrid ranking strategies** that can adapt to different user contexts and query types.
 * Implementing **re-ranking mechanisms** that leverage richer contextual information from risk cases and user profiles to further improve the relevance of the top results.
 
-These enhancements aim to provide users with the most pertinent risk information more effectively, contributing to a more efficient and accurate overall RIRS.
+These enhancements aim to provide users with the most pertinent risk information more effectively, contributing to a more efficient and accurate overall ACRIS.
