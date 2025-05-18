@@ -1,0 +1,50 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools"]
+
+[project]
+name = "acris"
+version = "0.1.0"
+description = "Automated Construction Risk Identification System"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Osama Ata", email = "me@osamata.com" }]
+maintainers = [{ name = "Osama Ata", email = "me@osamata.com" }]
+license = { text = "MIT" }
+keywords = ["construction", "risk", "automation", "engineering"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas >=1.4",
+    "numpy >=1.21",
+    "requests >=2.27",
+    # Add more dependencies as needed
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+dev = ["ruff"]
+
+[project.urls]
+homepage = "https://github.com/osama-ata/ACRIS"
+repository = "https://github.com/osama-ata/ACRIS"
+documentation = "https://github.com/osama-ata/ACRIS/wiki"
+
+[project.scripts]
+acris-cli = "acris.main:main"
+
+[project.entry-points."acris.plugins"]
+# Example plugin entry point
+#sample_plugin = "acris.plugins.sample:SamplePlugin"
+
+[tool.setuptools]
+# If you use setuptools, you can add its config here
+# Example: to include package data
+packages = ["acris"]
+
+# Optionally, for license files (PEP 639, not all build backends support this):
+#[project.license-files]
+#paths = ["LICENSE", "NOTICE"]
