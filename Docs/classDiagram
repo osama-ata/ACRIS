@@ -1,0 +1,39 @@
+classDiagram
+    class DP {
+        <<module>>
+        +RiskCaseDataset
+        +ContentExtractionProcessing()
+        +RiskCaseDatabase
+    }
+    class UPQ {
+        <<module>>
+        +User
+        +Project
+        +Query
+        +UsersProjectsQueriesDatabase
+    }
+    class QO {
+        <<module>>
+        +QueryProcessing()
+        +QueryExpansion()
+        +PredefinedLexicon
+        +WordNet
+        +QueryFiltering()
+        +QueriesData
+    }
+    class RO {
+        <<module>>
+        +RecommendingProcess()
+    }
+    class RA {
+        <<module>>
+        +QueryCaseSimilarityProcessing()
+        +RankingOutput()
+    }
+
+    DP --> RA : "provides Risk Cases"
+    QO --> RO : "provides Queries Data"
+    QO --> UPQ : "updates/reads user/project/query data"
+    RO --> RA : "recommends to retrieval"
+    UPQ --> QO : "user/project/query context"
+    QO --> RA : "sends processed queries"
