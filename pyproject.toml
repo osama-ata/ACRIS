@@ -10,11 +10,11 @@ readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Osama Ata", email = "me@osamata.com" }]
 maintainers = [{ name = "Osama Ata", email = "me@osamata.com" }]
-license = { text = "MIT" }
+license = "CC-BY-NC-SA-4.0"
+license-files = ["LICENSE"]
 keywords = ["construction", "risk", "automation", "engineering"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dependencies = [
@@ -45,6 +45,30 @@ acris-cli = "acris.main:main"
 # Example: to include package data
 packages = ["acris"]
 
-# Optionally, for license files (PEP 639, not all build backends support this):
-#[project.license-files]
-#paths = ["LICENSE", "NOTICE"]
+[dependency-groups]
+dev = ["ruff>=0.11.10"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+docstring-code-format = true
+docstring-code-line-length = 60
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]

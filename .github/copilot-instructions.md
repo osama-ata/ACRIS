@@ -1,6 +1,6 @@
 # GitHub Copilot Instructions for the ACRIS Project
 
-## 1. Project Overview
+## Project Overview
 
 - **Project Name:** ACRIS (Architecture for a Risk Information System)
 - **Goal:** To develop a robust and intelligent system that allows users to effectively query, retrieve, and receive recommendations for relevant risk cases. The system aims to improve access to critical risk information through advanced data processing, query understanding, and recommendation techniques.
@@ -8,7 +8,52 @@
   - `ACRIS System Development Plan`: Outlines the phased development approach, modules, technologies, and best practices.
   - `blueprint.md`: Describes the high-level architecture, components, and data flows. **Please refer to these documents for context.**
 
-## 2. Architecture Summary
+## UV Features
+
+### The pip interface
+
+- `source .venv/bin/activate`: Activate the virtual environment.
+- `uv pip install`: Install packages into the current environment.
+- `uv pip show`: Show details about an installed package.
+- `uv pip freeze`: List installed packages and their versions.
+- `uv pip check`: Check that the current environment has compatible packages.
+- `uv pip list`: List installed packages.
+- `uv pip uninstall`: Uninstall packages.
+- `uv pip tree`: View the dependency tree for the environment.
+
+### Scripts
+
+See the [guide on tools](https://github.com/astral-sh/uv/blob/main/docs/guides/tools.md) to get started.
+
+Executing standalone Python scripts, e.g., `example.py`.
+
+- `uv run`: Run a script.
+- `uv add --script`: Add a dependency to a script
+- `uv remove --script`: Remove a dependency from a script
+
+See the [guide on running scripts](https://github.com/astral-sh/uv/blob/main/docs/guides/scripts.md) to get started.
+
+### Projects
+
+Creating and working on Python projects, i.e., with a `pyproject.toml`.
+
+- `uv add`: Add a dependency to the project.
+- `uv remove`: Remove a dependency from the project.
+- `uv sync`: Sync the project's dependencies with the environment.
+- `uv lock`: Create a lockfile for the project's dependencies.
+- `uv run`: Run a command in the project environment.
+- `uv tree`: View the dependency tree for the project.
+- `uv build`: Build the project into distribution archives.
+- `uv publish`: Publish the project to a package index.
+
+See the [guide on projects](https://github.com/astral-sh/uv/blob/main/docs/guides/projects.md) to get started.
+
+### Next steps
+
+Read the [guides](https://github.com/astral-sh/uv/blob/main/docs/guides/index.md) for an introduction to each feature, check out
+[concept](https://github.com/astral-sh/uv/blob/main/docs/concepts/index.md) pages for in-depth details about uv's features.
+
+## Architecture Summary
 
 The ACRIS system is now organized as a **monolithic modular Python package** under the `acris/` directory. The main modules are:
 
@@ -26,7 +71,7 @@ The main entry point is `acris/main.py`.
 - "Risk Case Database": Stores processed risk information (likely text-heavy, suitable for search engines like Elasticsearch).
 - "Users, Projects, Queries Database": Stores user accounts, project information, and query logs (relational or NoSQL).
 
-## 3. Key Technologies
+## Key Technologies
 
 - **Backend Development:** Primarily **Python**. Frameworks like **Flask, Django, or FastAPI** are preferred.
 - **Databases:**
@@ -40,7 +85,7 @@ The main entry point is `acris/main.py`.
 - **Version Control:** Git (using Gitflow branching model where appropriate).
 - **Testing Frameworks:** `pytest` for Python.
 
-## 4. Coding Standards & Best Practices
+## Coding Standards & Best Practices
 
 - **Monolithic Modular Structure:** All code should reside within the `acris/` directory, organized by module as described above. Avoid creating separate microservices or external packages unless explicitly required by the architecture.
 - **Modularity:** Design components with clear responsibilities and well-defined APIs for loose coupling between modules.
@@ -48,6 +93,7 @@ The main entry point is `acris/main.py`.
   - Write clear, concise, and well-commented code.
   - Use meaningful variable and function names.
   - **Python:** Strictly adhere to **PEP 8** style guidelines. Include **type hints** for all function signatures and complex variables.
+  - Use **ruff** for linting and formatting Python code. Prefer ruff over other linters/formatters (e.g., flake8, black, isort) for consistency and speed.
 - **Documentation:**
   - Provide comprehensive docstrings for all modules, classes, and functions (e.g., Google-style Python docstrings).
   - Keep API documentation (Swagger/OpenAPI) up-to-date.
@@ -65,7 +111,7 @@ The main entry point is `acris/main.py`.
 - **Logging:** Implement comprehensive logging throughout the application for debugging, monitoring, and auditing purposes. Use standard Python logging module.
 - **Scalability:** Design modules, especially DP, RO, and RA, with scalability in mind. Consider asynchronous operations for long-running tasks.
 
-## 5. Specific Instructions for GitHub Copilot
+## Specific Instructions for GitHub Copilot
 
 - **Adherence to Standards:** When generating code, strictly follow the coding standards, technology choices, and best practices outlined above (especially PEP 8 and type hints for Python).
 - **Contextual Awareness:** Refer to the `blueprint.md` for architectural context and the `ACRIS System Development Plan` for module-specific objectives and tasks.
@@ -83,5 +129,3 @@ The main entry point is `acris/main.py`.
   - The system deals with "Risk Cases." Query expansion involves a "Predefined Lexicon" (domain-specific) and "WordNet."
   - Recommendations should be tailored to risk assessment and information retrieval.
   - When processing "Risk Case Data," be mindful that it could be sensitive. While the primary goal is content-based retrieval, avoid suggesting operations that might unnecessarily expose raw sensitive details without proper context or controls.
-
-By following these instructions, GitHub Copilot can be a more effective assistant in developing the ACRIS project, ensuring consistency, quality, and adherence to architectural and design principles.
