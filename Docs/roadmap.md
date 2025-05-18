@@ -3,19 +3,19 @@
 ## 1. **Documentation**
 
 - **README.md:** Ensure it covers system purpose, setup instructions, architecture summary, and usage examples.
-- **Module Docs:** Keep `blueprint.md` and `ACRIS System Development Plan` up to date. Consider adding module-level documentation for each core component (DP, UPQ, QO, RO, RA).
+- **Module Docs:** Keep `blueprint.md` and `ACRIS System Development Plan` up to date. Add or update module-level documentation for each core component (DP, UPQ, QO, RO, RA) within the monolithic `acris/` package.
 - **API Docs:** Use Swagger/OpenAPI for REST endpoints. Include examples and expected responses.
 
 ## 2. **Code Quality**
 
 - **PEP 8 & Type Hints:** Audit all Python code for adherence to PEP 8 and ensure consistent use of type hints.
 - **Docstrings:** Add/expand Google-style docstrings for all functions, classes, and modules.
-- **Modularity:** Check that each component has clear, well-defined responsibilities and interfaces.
+- **Modularity:** Ensure each module in `acris/` has clear, well-defined responsibilities and interfaces, maintaining strong internal modularity within the monolith.
 
 ## 3. **Testing**
 
 - **Unit Tests:** Increase test coverage using `pytest`. Each major logic branch should have tests.
-- **Integration/System Tests:** Add tests for component interactions and end-to-end workflows.
+- **Integration/System Tests:** Add tests for module interactions and end-to-end workflows within the monolithic structure.
 - **Continuous Integration:** Set up GitHub Actions or similar to run tests and lint checks automatically on PRs.
 
 ## 4. **Security & Configuration**
@@ -27,9 +27,9 @@
 ## 5. **Architecture/Tech Stack**
 
 - **Database Abstraction:** Use SQLAlchemy or Django ORM for UPQ; integrate Elasticsearch for DP if not already.
-- **Logging:** Implement consistent logging (`logging` module in Python) for all components.
+- **Logging:** Implement consistent logging (`logging` module in Python) for all modules.
 - **Asynchronous Processing:** For DP, RO, and RA, consider async tasks (e.g., Celery) if workload is heavy.
-- **Containerization:** Add/update Dockerfiles for each service and ensure local dev is easy (docker-compose).
+- **Containerization:** Add/update Dockerfiles for the monolithic app and ensure local dev is easy (docker-compose).
 
 ## 6. **Frontend (if present)**
 

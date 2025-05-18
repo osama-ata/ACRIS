@@ -10,13 +10,16 @@
 
 ## 2. Architecture Summary
 
-The ACRIS system comprises five core components:
+The ACRIS system is now organized as a **monolithic modular Python package** under the `acris/` directory. The main modules are:
 
-1.  **DP (Data Preprocessing):** Ingests, cleans, processes, and stores risk case data into the "Risk Case Database."
-2.  **UPQ (Users, Projects, Queries Data Storage):** Manages user profiles, project details, and logs user queries in the "Users, Projects, Queries Database."
-3.  **QO (Query Operation):** Processes incoming user queries, performs expansion (using a "Predefined Lexicon" and "WordNet"), and filters them to produce structured "Queries Data."
-4.  **RO (Recommending Operation):** Contains the "Recommending Process" that uses "Queries Data" to generate recommendations or refine query parameters for retrieval.
-5.  **RA (Retrieval Application):** Performs similarity processing between queries/recommendations and risk cases, then ranks and outputs the results.
+- `dp/`: Data Processing
+- `upq/`: User & Project Query
+- `qo/`: Question Organization
+- `ro/`: Risk Output
+- `ra/`: Risk Analysis
+- `common/`: Shared utilities, config, and data models
+
+The main entry point is `acris/main.py`.
 
 **Key Data Stores:**
 
@@ -39,7 +42,8 @@ The ACRIS system comprises five core components:
 
 ## 4. Coding Standards & Best Practices
 
-- **Modularity:** Design components with clear responsibilities and well-defined APIs for loose coupling.
+- **Monolithic Modular Structure:** All code should reside within the `acris/` directory, organized by module as described above. Avoid creating separate microservices or external packages unless explicitly required by the architecture.
+- **Modularity:** Design components with clear responsibilities and well-defined APIs for loose coupling between modules.
 - **Readability & Maintainability:**
   - Write clear, concise, and well-commented code.
   - Use meaningful variable and function names.
@@ -50,7 +54,7 @@ The ACRIS system comprises five core components:
 - **Configuration Management:** Externalize all configurations (database credentials, API keys, file paths, model parameters). Do not hardcode sensitive information. Use environment variables or configuration files.
 - **Testing:**
   - Write comprehensive **unit tests** for all new logic. Aim for high test coverage.
-  - Develop **integration tests** for interactions between components.
+  - Develop **integration tests** for interactions between modules.
   - System tests should cover main user workflows.
 - **Security:**
   - Always validate and sanitize user inputs.
@@ -59,7 +63,7 @@ The ACRIS system comprises five core components:
   - Be mindful of dependencies and scan for vulnerabilities.
 - **Error Handling:** Implement robust error handling using try-except blocks. Provide meaningful error messages and appropriate HTTP status codes for APIs.
 - **Logging:** Implement comprehensive logging throughout the application for debugging, monitoring, and auditing purposes. Use standard Python logging module.
-- **Scalability:** Design components, especially DP, RO, and RA, with scalability in mind. Consider asynchronous operations for long-running tasks.
+- **Scalability:** Design modules, especially DP, RO, and RA, with scalability in mind. Consider asynchronous operations for long-running tasks.
 
 ## 5. Specific Instructions for GitHub Copilot
 
