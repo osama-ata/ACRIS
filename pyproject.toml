@@ -19,9 +19,11 @@ classifiers = [
 ]
 dependencies = [
     "pandas >=1.4",
-    "numpy >=1.21",
+    "numpy>=1.21",
     "requests >=2.27",
     # Add more dependencies as needed
+    "duckdb>=1.2.2",
+    "sentence-transformers>=4.1.0",
 ]
 
 [project.optional-dependencies]
