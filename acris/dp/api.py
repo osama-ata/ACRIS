@@ -1,5 +1,9 @@
 # This file will contain the API for the Data Preprocessing (DP) module.
 import re
+import logging
+import pandas as pd
+
+logger = logging.getLogger(__name__)
 
 def preprocess_text(text: str) -> str:
   """
@@ -47,8 +51,6 @@ def extract_entities(text: str) -> list[tuple[str, str]]:
   # For now, return an empty list or a placeholder.
   return [("ORG", "ACME Corp"), ("PERSON", "Jane Doe")] # Example placeholder
 
-import pandas as pd
-
 def load_data_source(source_path: str, file_type: str) -> pd.DataFrame:
   """
   Loads data from a specified source path into a pandas DataFrame.
@@ -68,14 +70,15 @@ def load_data_source(source_path: str, file_type: str) -> pd.DataFrame:
       # In a real scenario, more robust error handling and support for other
       # file types (json, excel, databases, etc.) would be added.
       df = pd.read_csv(source_path)
+      logger.info(f"Successfully loaded {file_type} file: {source_path}")
       return df
     except FileNotFoundError:
-      print(f"Error: File not found at {source_path}")
+      logger.error(f"Error loading {file_type} file {source_path}: File not found.")
       return pd.DataFrame() # Return empty DataFrame
     except Exception as e:
-      print(f"Error loading CSV file: {e}")
+      logger.error(f"Error loading {file_type} file {source_path}: {e}")
       return pd.DataFrame() # Return empty DataFrame
   else:
     # Placeholder for other file types
-    print(f"File type '{file_type}' not yet supported.")
+    logger.warning(f"Unsupported file type: {file_type} for file {source_path}")
     return pd.DataFrame() # Return empty DataFrame
