@@ -3,6 +3,9 @@ from dataclasses import dataclass, field
 from typing import List, Dict, Any
 import json
 import uuid
+import logging
+
+logger = logging.getLogger(__name__)
 
 @dataclass
 class Report:
@@ -37,12 +40,16 @@ def format_risk_data(risk_data: Dict[str, Any], format_type: str = 'json') -> st
         try:
             return json.dumps(risk_data, indent=2)
         except TypeError as e:
-            return f"Error: Could not serialize risk_data to JSON. {e}"
+            logger.error(f"Error serializing risk_data to JSON: {e}")
+            return f"Error: Could not serialize risk_data to JSON. {e}" # Keep returning error message as per original behavior
     elif format_type == 'text':
         # Simple text summarization placeholder
         summary_lines = [f"{key}: {value}" for key, value in risk_data.items()]
         return "\n".join(summary_lines) if summary_lines else "No data to display."
     else:
+        logger.warning(f"Unsupported format_type: {format_type}. Supported formats are 'json' and 'text'. Returning empty string or error message as appropriate.")
+        # Returning the original error message for consistency with previous behavior for now.
+        # Consider if returning an empty string or raising an exception is more appropriate.
         return f"Error: Unsupported format_type '{format_type}'. Supported formats are 'json' and 'text'."
 
 def generate_risk_report(risk_cases: List[Dict[str, Any]], title: str) -> Report:
@@ -56,6 +63,7 @@ def generate_risk_report(risk_cases: List[Dict[str, Any]], title: str) -> Report
     Returns:
         A Report object containing a summary of the risk cases.
     """
+    logger.info(f"Generating report titled: {title}")
     report_content_parts = [f"Report Title: {title}\n"]
     report_content_parts.append(f"Number of risk cases: {len(risk_cases)}\n")
 
@@ -96,5 +104,6 @@ def get_risk_visualization(risk_data: Dict[str, Any], viz_type: str) -> str:
         A string placeholder indicating the type of visualization.
         For example, "placeholder_for_barchart_severity".
     """
+    logger.info(f"Generating visualization of type {viz_type} for data.")
     # risk_data is unused in this placeholder, but would be used in a real implementation.
     return f"placeholder_for_{viz_type}"
